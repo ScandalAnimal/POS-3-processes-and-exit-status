@@ -47,6 +47,7 @@ void printDataAfterProcessEnds(char* name, pid_t pid, int status) {
 
 int main(int argc, char* argv[]) {
 	
+	argc = argc;
 	pid_t parent_pid, child_pid;
 	int status;
 
