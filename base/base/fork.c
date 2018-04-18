@@ -61,7 +61,7 @@ int main(int argc, char* argv[]) {
 
 		if (child_pid == 0) {
 			printDataAboutProcess("child");
-			return execv(argv[1], argv);
+			return execv(argv[1], &(argv[1]));
 		}
 		else if (child_pid > 1) {
 			signal(SIGINT, SIG_IGN);
